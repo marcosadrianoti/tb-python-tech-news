@@ -73,8 +73,8 @@ def get_tech_news(amount):
     list_by_amount = [news_list[i] for i in range(amount)]
 
     scraped = []
-    for news_item in list_by_amount:
-        scraped_news = scrape_news(fetch(news_item))
+    for news in list_by_amount:
+        scraped_news = scrape_news(fetch(news))
         scraped.append(scraped_news)
 
     create_news(scraped)
