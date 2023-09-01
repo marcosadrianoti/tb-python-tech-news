@@ -7,11 +7,8 @@ def search_by_title(title):
     # https://www.mongodb.com/docs/manual/reference/operator/query/regex/
     regex = {"$regex": title, "$options": "i"}
     query = {"title": regex}
-    result_search_news = search_news(query)
-    news = []
-    for new in result_search_news:
-        news.append((new["title"], new["url"]))
-    return news
+
+    return get_result_news(query)
 
 
 # Requisito 8
@@ -24,16 +21,24 @@ def search_by_date(date):
 
         regex = {"$regex": new_date_format}
         query = {"timestamp": regex}
-        result_search_news = search_news(query)
-        news = []
-        for new in result_search_news:
-            news.append((new["title"], new["url"]))
-        return news
+
+        return get_result_news(query)
     except ValueError:
         raise ValueError("Data inválida")
 
 
 # Requisito 9
 def search_by_category(category):
-    """Seu código deve vir aqui"""
-    raise NotImplementedError
+    regex = {"$regex": category, "$options": "i"}
+    query = {"category": regex}
+
+    return get_result_news(query)
+
+
+def get_result_news(query):
+    result_search_news = search_news(query)
+    news = []
+    for new in result_search_news:
+        news.append((new["title"], new["url"]))
+
+    return news
