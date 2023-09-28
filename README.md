@@ -62,7 +62,19 @@ Instale as dependências no ambiente virtual:
 python3 -m pip install -r dev-requirements.txt
 ```
 
-Execute os testes com:
+Rode o docker-compose para o banco de dados:
 ```bash
-python3 -m pytest
+docker-compose up -d mongodb
+```
+
+Teste Manual:
+* Abra um terminal Python importando a função através do comando:
+```bash
+python3 -i tech_news/scraper.py
+```
+
+* Agora invoque as funções. Exemplo:
+```bash
+html = fetch(https://blog.betrybe.com)
+scrape_news(html)
 ```
