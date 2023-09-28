@@ -4,10 +4,13 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong>Objetivos do projeto:</strong></summary>
  
-  * Desenvolver um gerador de relatórios. Deve receber arquivos contendo informações sobre um estoque e produzir um relatório abrangente com base nesses dados.
+  * Desenvolver uma aplicação que faz consultas em notícias sobre tecnologia utilizando a raspagem de dados no [blog da trybe](https://blog.betrybe.com).
   * Verificar se sou capaz de:
-    * Aplicar conceitos de Programação Orientada a Objetos em Python.
-    * Implementar leitura e escrita de arquivos CSV e JSON em Python.
+    * Utilizar o terminal interativo do Python
+    * Escrever seus próprios módulos e importá-los em outros códigos
+    * Aplicar técnicas de raspagem de dados
+    * Extrair dados de conteúdo HTML
+    * Armazenar os dados obtidos em um banco de dados.
 </details>
 <details>
 <summary><strong> Requisitos do projeto:</strong></summary>
