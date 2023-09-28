@@ -15,13 +15,15 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong> Requisitos do projeto:</strong></summary>
 
-  *  Testar o construtor/inicializador do objeto Produto.
-  *  Testar o relatório individual gerado por Produto.
-  *  Criar a Interface `Importer`.
-  *  Criar a classe `JsonImporter`.
-  *  Criar a classe `Inventory`.
-  *  Criar o protocolo `Report`.
-  *  Criar o relatório `SimpleReport`.
+  *  Criar a função `fetch`.
+  *  Criar a função `scrape_updates`.
+  *  Criar a função `scrape_next_page_link`.
+  *  Criar a função `scrape_news`.
+  *  Criar a função `get_tech_news` para obter as notícias.
+  *  Testar a classe `ReadingPlanService`.
+  *  Criar a função `search_by_title`.
+  *  Criar a função `search_by_date`.
+  *  Criar a função `search_by_category`.
 </details>
   
 ## Rodando o projeto localmente
@@ -36,13 +38,13 @@ cd meu-diretorio
 Clone o projeto com o comando `git clone`:
 
 ```bash
-git clone git@github.com:marcosadrianoti/tb-python-inventory-report.git
+git clone git@github.com:marcosadrianoti/tb-python-tech-news.git
 ```
 
 Acesse o diretório do projeto com o comando `cd`:
 
 ```bash
-cd tb-python-inventory-report
+cd tb-python-tech-news
 ```
 
 crie o ambiente virtual:
